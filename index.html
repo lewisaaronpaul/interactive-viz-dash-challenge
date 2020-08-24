@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bellybutton Biodiversity</title>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <div class="container-fluid bg-info">
+    <div class="row">
+      <div class="col col-md-12 jumbotron text-center bg-dark">
+        <h1 class="display-2"><span class="text-white font-weight-bold">Belly Button</span></h1>
+        <h1 class="display-2"><span class="text-warning">Biodiversity Dashboard</span> </h1>
+        <p class="lead text-white">Use the interactive charts below to explore the dataset.</p>
+        <p class="lead text-white">The dataset for this assignment catalogs the microbes that colonize human navels.</p>
+        <p class="lead text-white">The dataset reveals that a small handful of microbial species, in this study, were present in more than 70% of people, while the rest were relatively rare.</p>
+        <p class="lead text-white">You can explore the bar chart and bubble chart for each subject.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2 bg-dark text-white">
+        <div class="well bg-warning text-center">
+          <h5>Test Subject</h5>
+          <h5>ID No.:</h5>
+          <select id="selDataset" onchange="barGen(this.value)"></select>
+        </div>
+        <div class="panel panel-dark">
+          <div class="panel-heading mt-2">
+            <h4 class="panel-title">Demographic Info:</h4>
+            <hr class="mb-3 bg-warning solid"/>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+      <div class="col-md-5 bg-info">
+        <div id="bar1"></div>
+      </div>
+      <div class="col-md-5 bg-info">
+        <div id="bar2"></div>
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-md-12 bg-info">
+        <div id="bubble"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="bg-dark mt-2">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <h1 class="text-warning lead font-weight-bold">Aaron Paul Lewis</h1>
+          <h1 class="text-warning lead font-weight-bold">Data Analytics and Visualization Bootcamp</h1>
+          <h1 class="text-warning lead font-weight-bold">Rice University</h1>
+          <h1 class="text-warning lead font-weight-bold">lewisaaronpaul@gmail.com</h1>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <!-- end of footer -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="static/js/app.js"></script>
+
+</body>
+
+</html>
